@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> ACE GAMING </title> <!-- Title of website-->
+<!-- This is the styling tag of my website.-->
+<style>
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family:Century Gothic; <!-- This is applied to all text as font will Century Gothic.-->
+  } 
+  
+  header {
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/image1.png");
+	 height: 110vh;
+	 background-size: cover;     <!-- This is used to design and organise background of website.-->
+	 background-position: center;
+	 }
+	 
+	 ul{
+	float: right; <!-- This is used to design and organise navigation bar of website.-->
+	list-style-type: none; 
+     margin-top: 25px;	
+    }
+	
+	 ul li{
+	display: inline-block;
+  }
+  
+  ul li a{
+	text-decoration: none;
+	color:white;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+    transition: 0.6s ease;
+	}
+	
+	ul li a:hover{
+	background-color:white;
+	color:black;
+	}
+	
+	.logo{
+	float: left;
+	width: 130px;
+	height: auto;
+	}
+	
+	.main{
+	max-width: 1200px;
+	margin:auto;
+  }
+  
+  .title{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+  }
+  
+  .title h1{
+	color:white;
+	font-size:50px;
+  }
+  
+   .button{
+	position:absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+  }
+  
+  .btn{
+	  border:1px solid white;
+	  padding: 10px 30px;
+	  color:white;
+	  text-decoration:none;
+	  transition: 0.6s ease;
+  }
+  
+  .btn:hover{
+	   background-color:white;
+	  color:black;
+  }
+  
+  #head {
+      
+	  font-size:40px;
+	  text-decoration:underline;
+	  color:white;
+	  position:absolute;
+	bottom: 400%;
+	right: 45%;
+	transform: translate(-50%,-50%)
+   }
+
+</style>
+<!-- This is the CSS used to design and create my online digital clock.-->
+<style type="text/css">
+.clockStyle{
+background-color:transparent;
+border:solid white 5px ;
+border-radius: 12px;
+padding:6px;
+color:white;
+font-family:"Century Gothic", Gadget, sans-serif;
+font-size:30px;
+font-weight:bold;
+letter-spacing: 2px;
+display:inline;
+	  position:absolute;
+	top: 25%;
+	left: 90%;
+	transform: translate(-50%,-50%)
+}
+</style>
+
+ 
+</head>
+
+
+<body>
+<header>
+<div class = "main">
+
+<div class = "logo">
+<img src = "images/logo3.png" height=200px> <!-- This is the logo of website.-->
+</div>
+<ul> 
+<li> <a href="index.html">HOME</a></li>
+<li> <a href="gallery.html">GALLERY</a></li>
+<li> <a href="question.html">QUESTIONNAIRE</a></li>   <!-- This is the navigation bar of the website.-->
+<li> <a href="games.html">GAMES</a></li>
+<li> <a href="consoles.html">CONSOLES</a></li>
+
+
+</ul>
+</div>
+
+<div class = "title"> 
+<h1> Welcome To Ace Gaming </h1> <!--This is the title of the web page.-->
+<div id="head"></div> 
+
+</div>
+
+<div class = "button">
+<a href = "https://www.gamespot.com/videos/trailers/" class = "btn">  Game Trailers</a> <!-- This is a button where it will take the user to a different wen=bsite if the user click on the button.-->
+<a href = "https://www.gamespot.com/news/"class = "btn">  Game News</a>
+</div>
+
+<div id= "clockDisplay" class="clockStyle"></div>
+<script type= "text/javascript" language="javascript">  //<!-- This is Javascript the scripting language used to created the online clock on the website.-->
+function renderTime() {
+
+var currentTime = new Date();  //<!-- This is the variables used for creating the online clock.-->
+var diem = "AM";
+var h = currentTime.getHours();//<!-- Hours used as variable.-->
+var m = currentTime.getMinutes();//<!-- Minutes used as variable.-->
+var s = currentTime.getSeconds();//<!-- Seconds used as variable.-->
+
+if (h == 0) { //<!-- If statements used to detemruine time units PM and AM.-->
+    h = 12;
+}   else if (h > 12) {//<!-- If values is more than 12 than units PM will show.-->
+    h = h -12;
+	diem = "PM";
+}
+  if (h < 10) { 
+  h = "0" + h;
+  }
+  
+   if (m < 10) { 
+  m = "0" + m;
+  }
+  
+   if (s < 10) { 
+  s = "0" + s;
+  }
+
+var myClock = document.getElementById('clockDisplay');
+myClock.textContent = h + ":" + m + ":" + s + "" + diem; //<!-- Var used to make online time clock function properly and make it operate live.-->
+setTimeout('renderTime()',1000);
+
+}
+renderTime();
+</script>
+
+</header>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

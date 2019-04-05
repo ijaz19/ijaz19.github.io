@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title> ACE GAMING </title><!-- Title of website-->
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	font-family:Century Gothic; <!-- This is applied to all text as font will Century Gothic.-->
+	}
+   
+  header {
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/image1.png");
+	 height: 110vh;
+	 background-size: cover; <!-- This is used to design and organise background of website.-->
+	 background-position: center;
+	 }
+	 
+	 ul{
+	float: right; <!-- This is used to design and organise navigation bar of website.-->
+	list-style-type: none;
+     margin-top: 25px;	
+    }
+	
+	 ul li{
+	display: inline-block;
+  }
+  
+  ul li a{
+	text-decoration: none;
+	color:white;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+    transition: 0.6s ease;
+	}
+	
+	ul li a:hover{
+	background-color:white;
+	color:black;
+	}
+	
+	.logo{
+	float: left;
+	width: 130px;
+	height: auto;
+	}
+	
+	.main{
+	max-width: 1200px;
+	margin:auto;
+  }
+  
+  .title{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+  }
+  
+  .title h1{
+	color:white;
+	font-size:50px;
+	position:absolute;
+	bottom:400%;
+	left: 100%;
+	transform: translate(-50%,-400%)
+	
+  }
+
+  
+  #head {
+      
+	  font-size:40px;
+	  text-decoration:underline;
+	  color:white;
+	 position:absolute;
+	bottom: 400%;
+	right: 45%;
+	transform: translate(-50%,-50%)
+   }
+   
+   .info{font-size:18pt;
+   color:white;
+	position:absolute;
+	top: 30%;
+	left: 2%;
+	transform: translate(-0%,-20%);
+	}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Century Gothic, sans-serif; margin:0} <!-- This is used to design and organise the slideshow of the website.-->
+.mySlides {display: none}
+img {vertical-align: middle;
+
+}
+
+.slideshow-container {
+  max-width: 800px;
+  
+	position:absolute;     
+	top: 50%;
+	left: 20%;
+	transform: translate(-0%,-20%);   <!-- This is used to positon where the slideshow should be on the website.-->
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; <!-- This is to create the arrows on the slideshow so the user can move to the next or previos image.-->
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 16px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color:black;
+ <!-- This the text and and banner in the slideshow created to annotate what the omage is in the gallery.-->
+  
+}
+
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; <!-- This is used to tell the user what number the image for example 1 out of 8..-->
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position:absolute;
+	top: 50%;
+	left: 2%;
+	transform: translate(-0%,-20%); 
+  
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+<!-- This is where the images are used to create the slideshow..-->
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="images/image2.jpg" style="width:100%">
+  <div class="text">Batman Arkham Knight</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="images/image3.jpg" style="width:100%">
+  <div class="text">Hitman 2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="images/image4.jpg" style="width:100%"> 
+  <div class="text">Ryse Son Of Rome</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="images/image5.jpg" style="width:100%"> 
+  <div class="text">Rise Of The Tomb Raider</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="images/image6.jpg" style="width:100%"> 
+  <div class="text">Uncharted Lost Legacy</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="images/image7.jpg" style="width:100%"> 
+  <div class="text">Fortnite</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="images/image8.jpg" style="width:100%"> 
+  <div class="text">Tekken 7</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="images/image9.jpg" style="width:100%"> 
+  <div class="text">Need For Speed Payback</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+
+<script> 
+var slideIndex = 1; //<!-- This is the scripting language used to create and function the slideshow to operate.-->
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) { //<!-- These are the variables used for the JavaScript.-->
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    //<!-- If statement used for slideshow to work properly with no issue.-->
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+
+
+
+ 
+</head>
+
+
+<body>
+<header>
+<div class = "main">
+
+<div class = "logo">
+<img src = "images/logo3.png" height=200px> <!-- This is the logo of website.-->
+</div>
+<ul> 
+<li> <a href="index.html">HOME</a></li>
+<li> <a href="gallery.html">GALLERY</a></li>
+<li> <a href="question.html">QUESTIONNAIRE</a></li> <!-- This is the navigation bar of the website.-->
+<li> <a href="games.html">GAMES</a></li>
+<li> <a href="consoles.html">CONSOLES</a></li>
+
+</ul>
+</div>
+<div class = "title"> 
+<h1> Gallery </h1> <!--This is the title of the web page.-->
+<div id="head"></div>
+
+</div>
+<div class="info">
+<p> This is the gallery page. This has the most favourite images from games.</p> <!--This is information about the webpage of the website.-->
+</div>
+
+</header>
+</body>
+</html> 

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	font-family:Century Gothic; <!-- This is applied to all text as font will Century Gothic.-->
+  }
+   
+  header {
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/image1.png");
+	 height: 190vh;
+	 background-size: cover;
+	 background-position: center; <!-- This is used to design and organise background of website.-->
+	 }
+	 
+	 ul{
+	float: right;<!-- This is used to design and organise navigation bar of website.-->
+	list-style-type: none;
+     margin-top: 25px;	
+    }
+	
+	 ul li{
+	display: inline-block;
+  }
+  
+  ul li a{
+	text-decoration: none;
+	color:white;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+    transition: 0.6s ease;
+	}
+	
+	ul li a:hover{
+	background-color:white;
+	color:black;
+	}
+	
+	.logo{
+	float: left;
+	width: 130px;
+	height: auto;
+	}
+	
+	.main{
+	max-width: 1200px;
+	margin:auto;
+  }
+  
+  .title{
+	position:absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+  }
+  
+  .title h1{
+	color:white;
+	font-size:50px;
+  }
+  
+   
+  
+  #head {
+      
+	  font-size:40px;
+	  text-decoration:underline;
+	  color:white;
+	  position:absolute;
+	bottom: 400%;
+	right: 45%;
+	transform: translate(-50%,-50%)
+   }
+   
+   .info{font-size:18pt;
+   color:white;
+	position:absolute;
+	top: 30%;
+	left: 2%;
+	transform: translate(-0%,-20%); <!-- This is used to design and organise the text of the website.-->
+	}
+	
+	#games{
+	color:white;
+	font-size:14.5px;
+	position:absolute;
+	top: 130%;
+	left: 50%;
+	transform: translate(-50%,-60%); 
+	border;1px solid white;
+	border-color:white; <!-- This is used to design and organise the table for games on the website.-->
+	
+	
+	
+   }
+   
+   .btn{
+	  border:1px solid white;
+	  padding: 10px 30px;
+	  color:white;
+	  text-decoration:none;
+	  transition: 0.6s ease;
+	
+  }
+  
+  .btn:hover{
+	   background-color:purple;
+	  color:white;
+  }
+  
+  
+ 
+  
+
+  
+  
+  
+
+	</style>
+	</head>
+	<body>
+
+<header>
+<div class = "main">
+
+<div class = "logo">
+<img src = "images/logo3.png" height=200px> <!-- This is the logo of website.-->
+</div>
+<ul> 
+<li> <a href="index.html">HOME</a></li>
+<li> <a href="gallery.html">GALLERY</a></li>
+<li> <a href="question.html">QUESTIONNAIRE</a></li> <!-- This is the navigation bar of the website.-->
+<li> <a href="games.html">GAMES</a></li>
+<li> <a href="consoles.html">CONSOLES</a></li>
+
+
+</div>
+</ul>
+<div class = "title"> 
+<h1>Games</h1> <!--This is the title of the web page.-->
+</div>
+<div id="head"></div>
+<div class="info">
+<p> These are the latest games available that are for sale.</p> <!--This is information about the webpage of the website.-->
+</div>
+
+
+<table border="1px solid white" align="center"  id="games"> <!--This is the table created for the games to be put in and seperate them.-->
+<tr align="center">
+<td>
+<img src="images/pro1.png" width="195" height="200"><br> <!--The image of the games.-->
+<br>Call of Duty: Black Ops 4</br> <!--Name of the game.-->
+<br>£47.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+<td>
+<img src="images/pro2.png" width="195" height="200"><br> <!--The image of the games.-->
+<br>Fifa 19</br> <!--Name of the game.-->
+<br>£39.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+<td>
+<img src="images/pro3.png" width="195" height="200"><br> <!--The image of the games.-->
+<br>God Of War</br> <!--Name of the game.-->
+<br>£29.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+<td>
+<img src="images/pro4.jpg" width="195" height="200"><br> <!--The image of the games.-->
+<br>Red Dead Redemption 2</br> <!--Name of the game.-->
+<br>£49.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+<td>
+<img src="images/pro5.png" width="195" height="200"><br> <!--The image of the games.-->
+<br>Spider-Man</br> <!--Name of the game.-->
+<br>£39.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+<td>
+<img src="images/pro6.jpg" width="195" height="200"><br> <!--The image of the games.-->
+<br>Assassin's Creed Odyssey</br> <!--Name of the game.-->
+<br>£49.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+<td>
+<img src="images/pro7.png" width="195" height="200"><br> <!--The image of the games.-->
+<br>Gran Turismo</br> <!--Name of the game.-->
+<br>£26.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+</tr>
+
+<tr align="center">
+<td>
+<img src="images/pro8.png" width="190" height="200"><br> <!--The image of the games.-->
+<br>Anthem</br> <!--Name of the game.-->
+<br>£49.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+<td>
+<img src="images/pro9.jpg" width="195" height="200"><br> <!--The image of the games.-->
+<br>Fortnite</br> <!--Name of the game.-->
+<br>£19.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+<td>
+<img src="images/pro10.jpg" width="195" height="200"><br> <!--The image of the games.-->
+<br>The Division 2</br> <!--Name of the game.-->
+<br>£49.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+<td>
+<img src="images/pro11.jpg" width="195" height="200"><br> <!--The image of the games.-->
+<br>Devil May Cry 5</br> <!--Name of the game.-->
+<br>£42.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+<td>
+<img src="images/pro12.jpg" width="195" height="200"><br> <!--The image of the games.-->
+<br>Grand Theft Auto 5</br> <!--Name of the game.-->
+<br>£32.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+<td>
+<img src="images/pro13.jpg" width="195" height="200"><br> <!--The image of the games.-->
+<br>Sekiro Shadows Die Twice</br> <!--Name of the game.-->
+<br>£55.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+<td>
+<img src="images/pro14.jpg" width="195" height="200"><br> <!--The image of the games.-->
+<br>Mortal Kombat 11</br> <!--Name of the game.-->
+<br>£49.99</br> <!--Price of the game.-->
+<br>Available On</br>
+<br>Xbox One</br> <!--What console the game is available on.-->
+<br>Or</br>
+<br>PS4</br>
+<br></br>
+<div class = "button">
+<br><a href = "#" class = "btn"><b>Buy</b></a> <!--The "Buy" button created for users to select and buy what game they like.-->
+</div>
+<br></br>
+</td>
+</tr>
+
+
+
+
+
+
+
+
+</table>
+</header>
+
+</body>
+</html>

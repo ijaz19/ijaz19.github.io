@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	font-family:Century Gothic; <!-- This is applied to all text as font will Century Gothic.-->
+  }
+   
+  header {
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/image1.png");
+	 height: 110vh;
+	 background-size: cover;
+	 background-position: center; <!-- This is used to design and organise background of website.-->
+	 }
+	 
+	 ul{
+	float: right; <!-- This is used to design and organise navigation bar of website.-->
+	list-style-type: none;
+     margin-top: 25px;	
+    }
+	
+	 ul li{
+	display: inline-block;
+  }
+  
+  ul li a{
+	text-decoration: none;
+	color:white;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+    transition: 0.6s ease;
+	}
+	
+	ul li a:hover{
+	background-color:white;
+	color:black;
+	}
+	
+	.logo{
+	float: left;
+	width: 130px;
+	height: auto;
+	}
+	
+	.main{
+	max-width: 1200px;
+	margin:auto;
+  }
+  
+  .title{
+	position:absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+  }
+  
+  .title h1{
+	color:white;
+	font-size:50px;
+  }
+  
+   
+  
+  #head {
+      
+	  font-size:40px;
+	  text-decoration:underline;
+	  color:white;
+	  position:absolute;
+	bottom: 400%;
+	right: 45%;
+	transform: translate(-50%,-50%)
+   }
+   
+   .info{font-size:18pt;
+   color:white;
+	position:absolute;
+	top: 30%;
+	left: 2%;
+	transform: translate(-0%,-20%);
+	}
+
+.wrap{
+max-width:350px;
+margin:auto;
+padding:20px;
+background:white;
+margin-top:100px;
+border:1px solid gray;
+border-radius:20px;
+text-decoration:underline;
+position:absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-70%);  
+}
+
+form{
+margin-top:50px;
+}
+
+input{
+width:100%;
+padding:10px;
+box-sizing:border-box;
+margin-bottom:10px;
+border:none;
+outline:none;
+border:1px solid gray;
+font-size 50px;
+font-weight:bold;
+color:black;
+border-radius:5px; <!-- This is used to design and organise the question form of the website.-->
+}
+
+
+h2{
+margin:0;
+padding:0;
+font-size:2em;
+text-align:center; <!-- This is used to design and organise the title on the question form on the website.-->
+}
+
+input[type=submit]{
+font-size:16px;
+margin-top:30px;
+color:white;
+font-weight:bold;
+background:black;
+border: 1px solid white;
+cursor:pointer; <!-- This is used to design and organise the submit button on the question form of the website.-->
+}
+
+input[type=submit]:hover{
+background:blue;
+}
+
+</style>
+<!-- This is the scripting language used to organise and validate the question form of the website.-->
+<script>
+function validateForm() {
+  var x = document.forms["question"]["name"].value;
+  if (x == "") {
+    alert("First name must be filled."); //<!-- This is the requirement and validation of the question form if the user doesn't fill in one of the boxes on the form an alert message would stating "this field must be filled."   .-->
+    return false;
+  }
+
+var x = document.forms["question"]["surname"].value;
+  if (x == "") {
+    alert("Surname must be filled."); //<!-- This is the requirement and validation of the question form if the user doesn't fill in one of the boxes on the form an alert message would stating "this field must be filled."   .-->
+    return false;
+  }
+
+
+  var x = document.forms["question"]["email"].value;
+  if (x == "") {
+    alert("Email address must be filled."); //<!-- This is the requirement and validation of the question form if the user doesn't fill in one of the boxes on the form an alert message would stating "this field must be filled."   .-->
+    return false;
+  }
+
+
+
+  var x = document.forms["question"]["game"].value;
+  if (x == "") {
+    alert("Favourite game must be filled."); //<!-- This is the requirement and validation of the question form if the user doesn't fill in one of the boxes on the form an alert message would stating "this field must be filled."   .-->
+    return false;
+  }
+
+
+
+  var x = document.forms["question"]["console"].value;
+  if (x == "") {
+    alert("Type of console must be filled."); //<!-- This is the requirement and validation of the question form if the user doesn't fill in one of the boxes on the form an alert message would stating "this field must be filled."   .-->
+    return false;
+  }
+
+
+
+  var x = document.forms["question"]["like"].value;
+  if (x == "") {
+    alert("Type of game must be filled."); //<!-- This is the requirement and validation of the question form if the user doesn't fill in one of the boxes on the form an alert message would stating "this field must be filled."   .-->
+    return false;
+  }
+  return( true );
+}
+
+</script>
+</head>
+<body>
+
+<header>
+<div class = "main">
+
+<div class = "logo">
+<img src = "images/logo3.png" height=200px> <!-- This is the logo of website.-->
+</div>
+<ul> 
+<li> <a href="index.html">HOME</a></li>
+<li> <a href="gallery.html">GALLERY</a></li>
+<li> <a href="question.html">QUESTIONNAIRE</a></li> <!-- This is the navigation bar of the website.-->
+<li> <a href="games.html">GAMES</a></li>
+<li> <a href="consoles.html">CONSOLES</a></li>
+
+</div>
+</ul>
+<div class = "title"> 
+<h1>Questionnaire</h1> <!--This is the title of the web page.-->
+</div>
+<div id="head"></div>
+<div class="info">
+<p> This page is allocated for users to fill out our questionnaire regarding their particular interest in gaming.</p> <!--This is information about the webpage of the website.-->
+</div>
+
+<div class= "wrap">
+<h2>Question Form</h2> <!--This is the title of the questionnaire.-->
+<form name="question" action="/action_page.php" onsubmit="return validateForm()" method="post">
+<input type="text" placeholder="Enter First Name" id="name"> <!--This is one of the fields that the user has to answer on the form.-->
+<input type="text" placeholder="Enter  Surname" id="surname"> <!--This is one of the fields that the user has to answer on the form.-->
+<input type="text" placeholder="Enter Email Address" id="email"> <!--This is one of the fields that the user has to answer on the form.-->
+<input type="text" placeholder="What Is Your Favourite Game?" id="game"> <!--This is one of the fields that the user has to answer on the form.-->
+<input type="text" placeholder="What Console Do You Have?" id="console"> <!--This is one of the fields that the user has to answer on the form.-->
+<input type="text" placeholder="What Type Of Games Do You Like?" id="like"> <!--This is one of the fields that the user has to answer on the form.-->
+<input type="submit" value="Submit"> <!--This is the submit button after the user has finished answering the questionnaire.-->
+</form>
+</div>
+
+
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
